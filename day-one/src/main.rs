@@ -6,6 +6,7 @@ use std::io::BufReader;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
+    assert_eq!(args.len(), 2, "Incorrect number of args");
 
     let mut frequencies = HashSet::new();
     let mut first_iter = true;
