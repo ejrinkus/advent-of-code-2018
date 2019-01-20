@@ -15,8 +15,8 @@ fn main() {
     let mut final_result = 0;
     let mut result = 0;
     while !found_final {
-        let mut f = File::open(&args[1]).expect("file not found");
-        let mut reader = BufReader::new(&f);
+        let f = File::open(&args[1]).expect("file not found");
+        let reader = BufReader::new(&f);
         for line in reader.lines() {
             frequencies.insert(result);
             let line = line.unwrap().to_string();
