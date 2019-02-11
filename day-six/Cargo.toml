@@ -3,4 +3,8 @@ name = "day-six"
 version = "0.1.0"
 authors = ["Eric Rinkus <ejrinkus@gmail.com>"]
 
+[lib]
+name = "plane"
+path = "src/lib.rs"
+
 [dependencies]
